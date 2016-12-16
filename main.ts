@@ -84,6 +84,7 @@ $(function() {
 
         else {
             playSeq();
+            $(".game-msg").text(colorSeq.length + " steps.");
         }
     }
 

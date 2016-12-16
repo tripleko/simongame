@@ -70,6 +70,7 @@ $(function () {
         }
         else {
             playSeq();
+            $(".game-msg").text(colorSeq.length + " steps.");
         }
     }
     $("#start-btn").click(function () {
