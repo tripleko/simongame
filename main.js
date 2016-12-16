@@ -77,10 +77,7 @@ $(function () {
         clicks = 0;
         $(".game-msg").text("");
         addToSeq();
-        isStrict = false;
-        if ($("#strictcheck").prop("checked")) {
-            isStrict = true;
-        }
+        isStrict = $("#strictcheck").prop("checked");
         $(".btn-row").hide();
     });
     function endGame(message) {
@@ -89,8 +86,6 @@ $(function () {
         $(".btn-row").show();
     }
     function onClickCheck(color, selector) {
-        console.log("test");
-        console.log(colorSeq);
         if (canClick) {
             if (colorSeq[clicks] === Index[color]) {
                 flashColor(0, color, selector);
