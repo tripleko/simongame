@@ -32,7 +32,7 @@ $(function() {
         YELLOW: new Audio("https://s3.amazonaws.com/freecodecamp/simonSound4.mp3")
     };
 
-    let colorSeq: number[] = [];
+    let colorSeq = [];
     let clicks = 0;
     let canClick = false;
     let isStrict = false;
